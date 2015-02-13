@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>Backbone.js</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<style>
+			body {
+				background: background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+			}
+			.btn {
+				border-radius: 0;
+			}
+		</style>
+	</head>
+	<body class="container">
+		
+		<div class="page-header">
+		  <h1><a href="http://www.htmlfivedev.com"><img src="logo-130x90.png"></a>Task.js Project <small>Powered by Backbone.js</small></h1>
+		</div>
+		
+		<section class="well container">
+			<form action="" id="addTaskForm" class="">
+				<input type="text" name="" id="" class="form-control" placeholder="Insert New Title">
+				<br>
+				<input type="submit" value="Submit" class="btn btn-primary">
+			</form>
+		</section>
+		<hr>
+		<section class="tasks">
+			<script id="taskTemplate" type="text/x-handlebars-template">
+				<div class="alert alert-success">
+
+					 <strong>Title:</strong> {{title}} 
+
+					 <article class="pull-right">
+					 	<button type="button" class="btn btn-info btn-xs edit">Edit</button> 
+					 	<button type="button" class="btn btn-danger btn-xs delete">Delete</button> 
+					 </article>
+					 
+				</div>
+			 </script>
+		 </section>
+		
+		
+
+		 
+
+		<!-- jQuery -->
+		<!-- // <script src="//code.jquery.com/jquery.js"></script> -->
+		<!-- Bootstrap JavaScript -->
+		<!-- // <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
+		<!-- // <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script> -->
+		<!-- // <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script> -->
+		<script src="_js/jquery-2.1.1.min.js"></script>
+		<script src="_js/underscore.js"></script>
+		<script src="_js/backbone.1.1.2.js"></script>
+		<script src="_js/handlebars-v1.1.2.js"></script>
+		<script src="_js/task.js"></script>
+
+	</body>
+</html>
